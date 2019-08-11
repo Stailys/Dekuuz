@@ -37,11 +37,14 @@ client.on("message", async message => {
     if(message.author.bot) return;
     if(message.channel.type === "dm") return;
     
-    let prefixo = await db.fetch(`prefix_${message.guild.id}`)
-    let prefix = (prefixo !== null) ? prefixo : 'd..'
+    let prefixo = await db.fetch(`prefix_${message.guild.id}`) // caso não queria o setprefix apaguei isso
+    let prefix = (prefixo !== null) ? prefixo : 'd..'//isso também
+    
     
     if(!message.content.startsWith(prefix)) return;
 
+  
+  //let prefix = 'd..' e deixe isso :D
     let args = message.content.slice(prefix.length).trim().split(' ');
     let cmd = args.shift().toLowerCase();
     let msg = message;
