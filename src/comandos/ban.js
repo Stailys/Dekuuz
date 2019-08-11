@@ -1,6 +1,6 @@
 const { RichEmbed } = require('discord.js')
 const { BK } = require('../armazanador/color')
-const { perm } = require('../armanazenador/perms')
+const { perm } = require('../armazanador/perms')
 
 exports.run = async (client, message, args) => {
     if(!message.member.hasPermission("ADMINISTRATOR")) {
@@ -56,4 +56,9 @@ exports.run = async (client, message, args) => {
     .addField('Pela motivo:', motivo)
     .addField('Pelo ADM:', `${message.author}`)
     user.send(banEM)
+}
+
+exports.config = { 
+    name: 'ban',
+    aliases: ['banir']
 }
