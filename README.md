@@ -7,3 +7,8 @@
 
 - Fazer as pessoas se divertirem com o Dekuuz !
 - Deixar seu servidor mais organizado !
+
+
+#Finalização
+
+-Este GitHub está completo, ou seja, jah esta finalizado !!
