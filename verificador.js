@@ -38,7 +38,7 @@ if(COLORS) {
 
 
 } catch(e) {
-    console.log(index)
-    console.log(comandos)
+    console.log(index)  
+    console.log(comandos)  //não sei se vai dar certo, mas deve dar kakaka
     console.log(colors)
 }
