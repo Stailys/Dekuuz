@@ -21,14 +21,24 @@ if(COLORS) {
 -------//---------------------//-------------------//-------------//-----//
 
 */
-if(!index) {
-    console.log(chalk.blueBright('[ERRO INDEX]'))
-}
 
-if(!comandos) {
-    console.log(chalk.blueBright('[ERRO COMANDOS]'))
-}
 
-if(!COLORS) {
-    console.log(chalk.blueBright('[ERRO COLORS]'))
+ try {
+    if(!index) {
+        console.log(chalk.blueBright('[ERRO INDEX]'))
+    }
+    
+    if(!comandos) {
+        console.log(chalk.blueBright('[ERRO COMANDOS]'))
+    }
+    
+    if(!COLORS) {
+        console.log(chalk.blueBright('[ERRO COLORS]'))
+    }
+
+
+} catch(e) {
+    console.log(index)
+    console.log(comandos)
+    console.log(colors)
 }
