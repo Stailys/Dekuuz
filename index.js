@@ -7,6 +7,7 @@ client.commands = new Collection()
 client.aliases = new Collection()
 
 const chalk = require('chalk')
+const db = require('quick.db')
 
 client.on("ready", () => {
   console.log(chalk.greenBright('[START]'))
@@ -35,9 +36,12 @@ client.on("message", async message => {
   
     if(message.author.bot) return;
     if(message.channel.type === "dm") return;
-    if(!message.content.startsWith(config.prefix)) return;
+    
+    let prefixo = await db.fetch(`prefix_${message.guild.id}`)
+    let prefix = (prefixo !== null) ? prefixo : 'd..'
+    
+    if(!message.content.startsWith(prefix)) return;
 
-    let prefix = 'd..'
     let args = message.content.slice(prefix.length).trim().split(' ');
     let cmd = args.shift().toLowerCase();
     let msg = message;
