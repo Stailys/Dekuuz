@@ -1,6 +1,7 @@
 #DEKUUZ
 
-- Um bot de um tutorial do Discord em desenvolvimento prático !
+- Um bot do Discord para fazer seu servidor ficar melhor !
+- Muitas funções dahora !!
 
 #Objetivos
 
