@@ -20,6 +20,6 @@ exports.run = async (client, message, args) => {
 }
 
 exports.config = {
-    name: 'lock',
+    name: 'unlock',
     aliases: []
 }

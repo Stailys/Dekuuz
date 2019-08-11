@@ -12,6 +12,8 @@
   "dependencies": {
     "chalk": "^2.4.2",
     "discord.js": "^11.5.1",
-    "fs": "0.0.1-security"
+    "fs": "0.0.1-security",
+    "ms": "^2.1.2",
+    "quick.db": "^7.0.0-b22"
   }
 }

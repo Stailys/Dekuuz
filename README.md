@@ -5,5 +5,5 @@
 
 #Objetivos
 
-- Fazer as pessoas se dive rtirem com o Dekuuz !
+- Fazer as pessoas se divertirem com o Dekuuz !
 - Deixar seu servidor mais organizado !
