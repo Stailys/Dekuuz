@@ -29,6 +29,13 @@ exports.run = async (client, message, args) => {
 
 }
 
+
+/*
+
+O resto do comando está na index !
+
+*/
+
 exports.config = {
     name: 'setprefix',
     aliases: ['stx']
