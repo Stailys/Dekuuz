@@ -23,7 +23,6 @@ module.exports.run = async (client, message, args) => {
     message.delete()
 
     
-  if(!message.member.hasPermission("MANEGE_MESSAGE")) return message.channel.send('```O idiota, você não tem permissão para usar este comando!```');
   if(!args[0]) {
       let embed1 = new RichEmbed()
       .setDescription('Forneça um número de 2 a 100 !')
